@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+	<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>EddaVerse</title>
+    <script src="https://stg.platform.onmeta.in/onmeta-sdk.js"></script>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <div id="widget"></div>
+    <script>
+      let createWidget = new onMetaWidget({
+        elementId: "widget",
+        apiKey: "a0dc841d-002a-429d-8f81-aa0ab20757ec",
+        walletAddress: "0xFFc39eab0fb83Es0c536c35C44D578F450FDBB6E"
+      });
+      createWidget.init();
+      createWidget.on("ALL_EVENTS", (status) => console.log(status));
+    </script>
+  </body>
+</html>
+</head>
+<body>
+	
+</body>
+</html>
